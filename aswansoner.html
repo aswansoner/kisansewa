@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mycalculator</title>
+    <link rel="icon" type="image/x-icon" href="https://png.pngtree.com/png-vector/20220119/ourmid/pngtree-calculator-logo-financial-management-icon-png-image_4243696.png">
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+         .center
+         {
+           text-align: center;
+           
+         }  
+         .container
+         {
+            border: 1px solid rgb(43, 43, 43);
+            border-radius: 10px;
+            box-shadow: #04445f;
+            background: #04445f;
+            margin: auto;
+            max-width: 40vw;
+            display: flex;
+            flex-direction: column;
+            align-items:center ;
+         }
+         .row
+         {
+            margin: 8px 0;
+         }  
+         
+         .row input{
+            margin: 0;
+            padding: 11px 38px;
+            border: 0px solid black;
+            border-radius: 5px;
+            font-size: 20px;
+            width: 26px;
+            height: 40px;
+            background: #44cee7;
+            color: #fff;
+            cursor: pointer;
+            
+         }
+         input.display {
+            margin: 0;
+            padding: 11px 38px;
+            border: 0px solid black;
+            border-radius: 5px;
+            font-size: 20px;
+            width: 240px;
+            height: 50px;
+            color: black;
+            outline: none;
+         }
+         .logo{
+            margin-top: 40px;
+            margin-left: 100px;
+            border: none;
+            border-radius: 25px;
+         }
+
+    </style>
+</head>
+<body>
+   <img src="https://png.pngtree.com/png-vector/20220119/ourmid/pngtree-calculator-logo-financial-management-icon-png-image_4243696.png" width="80px" height="80px" class="logo">
+   <img src="https://previews.123rf.com/images/mdranahamid/mdranahamid2002/mdranahamid200200717/139811703-initial-as-letter-logo-with-creative-modern-business-typography-vector-template-creative-abstract.jpg" width="150px" height="150px" style="float:right;border:none;border-radius: 30px;margin-right: 8%; ">
+   <div style="margin-top: 6%; margin-left: 10%;">
+   <h1 class="center"> MyCalculator using HTML,CSS,JS.</h1><BR><BR>
+   <form>
+   <div class="container">
+    <div class="row"><input type="text" name="display" class="display"></div>
+    <div class="row">
+      <input type="button" value="AC" onclick="display.value =''">
+      <input type="button" value="DE" onclick="display.value =display.value.toString().slice(0,-1)">
+      <input type="button" value="%" onclick="display.value +='%'">
+      <input type="button" value="/" onclick="display.value +='/'">
+     </div>
+    <div class="row">
+      <input type="button" value="7" onclick="display.value +='7'">
+      <input type="button" value="8" onclick="display.value +='8'">
+      <input type="button" value="9" onclick="display.value +='9'">
+      <input type="button" value="*" onclick="display.value +='*'">
+    </div>
+    <div class="row">
+      <input type="button" value="4" onclick="display.value +='4'">
+      <input type="button" value="5" onclick="display.value +='5'">
+      <input type="button" value="6" onclick="display.value +='6'">
+      <input type="button" value="-" onclick="display.value +='-'">
+     </div>
+     <div class="row">
+      <input type="button" value="1" onclick="display.value +='1'">
+      <input type="button" value="2" onclick="display.value +='2'">
+      <input type="button" value="3" onclick="display.value +='3'">
+      <input type="button" value="+" onclick="display.value +='+'">
+     </div>
+     <div class="row">
+      <input type="button" value="00" onclick="display.value +='00'">
+      <input type="button" value="0" onclick="display.value +='0'">
+      <input type="button" value="." onclick="display.value +='.'">
+      <input type="button" value="=" onclick="display.value=eval(display.value)">
+      
+     </div>
+   </div>
+   </form>
+</div>
+
+</body>
+</html>

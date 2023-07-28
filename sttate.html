@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cascading Dropdown Menus</title>
+  <style>
+    .dropdown {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="dropdown">
+    <label for="country">Country:</label>
+    <select id="country" onchange="populateStates()">
+      <option value="">Select a country</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="canada">Canada</option>
+    </select>
+  </div>
+  
+  <div class="dropdown">
+    <label for="state">State:</label>
+    <select id="state" onchange="populateDistricts()">
+      <option value="">Select a state</option>
+    </select>
+  </div>
+  
+  <div class="dropdown">
+    <label for="district">District:</label>
+    <select id="district">
+      <option value="">Select a district</option>
+    </select>
+  </div>
+
+  <script>
+    var statesByCountry = {
+      usa: ["New York", "California", "Texas"],
+      uk: ["London", "Birmingham", "Manchester"],
+      canada: ["Ontario", "Quebec", "British Columbia"]
+    };
+
+    function populateStates() {
+      var countrySelect = document.getElementById("country");
+      var stateSelect = document.getElementById("state");
+      var selectedCountry = countrySelect.value;
+
+      // Clear the state dropdown
+      stateSelect.innerHTML = '<option value="">Select a state</option>';
+
+      // Populate the state dropdown with states of the selected country
+      if (selectedCountry in statesByCountry) {
+        var states = statesByCountry[selectedCountry];
+        for (var i = 0; i < states.length; i++) {
+          var option = document.createElement("option");
+          option.text = states[i];
+          stateSelect.add(option);
+        }
+      }
+    }
+
+    function populateDistricts() {
+      var stateSelect = document.getElementById("state");
+      var districtSelect = document.getElementById("district");
+      var selectedState = stateSelect.value;
+
+      // Clear the district dropdown
+      districtSelect.innerHTML = '<option value="">Select a district</option>';
+
+      // Populate the district dropdown based on the selected state
+      // You can fetch districts from a data source based on the selected state here
+
+      // Example districts for demonstration purposes
+      if (selectedState === "New York") {
+        var districts = ["Manhattan", "Brooklyn", "Queens"];
+        for (var i = 0; i < districts.length; i++) {
+          var option = document.createElement("option");
+          option.text = districts[i];
+          districtSelect.add(option);
+        }
+      } else if (selectedState === "California") {
+        var districts = ["Los Angeles", "San Francisco", "San Diego"];
+        for (var i = 0; i < districts.length; i++) {
+          var option = document.createElement("option");
+          option.text = districts[i];
+          districtSelect.add(option);
+        }
+      }
+      // Add more conditions for other states if needed
+    }
+  </script>
+</body>
+</html>

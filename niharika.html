@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <head>
+        <title>
+            Registration
+        </title>
+        <style>
+             .hidden {
+      display: none;}
+      .Button{
+        border: none;
+        background-color: rgb(28, 30, 31);
+        height: 40px;
+        width: 100px;
+        text-transform: capitalize;
+        color: rgb(241, 241, 241);
+        border-radius: 5px;
+       
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-size: 110%;
+
+      }
+      .Button:hover{
+        background-color: rgb(24, 221, 232);
+    border: none;
+    color: black;
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+      }
+     
+      ul li{
+    padding: 10px;
+    
+}
+input.display {
+            margin: 0;
+            padding: 11px 38px;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 15px;
+            width: 130px;
+            height: 9px;
+            color: black;
+            outline: none;
+         }
+         
+         #Year,#Lateral,#gender,#caste,#City,#EconomicallyBackward,#SociallyChallenged,#Placed,#HigherStudies,#nextField,#country,#state,#district,#Branch{
+
+            border-radius: 4px;
+            height: 35px;
+            width:120px ;
+            font-size: 15px;
+            
+
+         }
+         .list1{
+            list-style-type:none;
+        display: flex;
+        padding: 30px;
+        
+        margin-left: 50px;
+        font-size: 20px;
+         }
+        
+         .form{
+          border: 1px solid black;
+          border-radius: 5px;
+          margin: 50px;
+          padding: 20px;
+         }
+        </style>
+    </head><div style="height: 55px; background-color: black; border-radius: 3px;">
+    <a href="https://aitr.ac.in/" title="Acropolis - AITR" rel="home"><img class="standard-logo" src="http://aitr.ac.in/wp-content/uploads/2015/09/finalaitrlogo.png" alt="Acropolis - AITR"></a>
+</div>
+    
+  
+    <form  method="post" class="form"> 
+      <center><h1 style="border:0.5px solid; background-color: rgb(67, 64, 64); color: aliceblue; border-radius: 5px;">Student Detail</h1>  </center>
+             
+          <ul class="list1">  <li> <label for="ID">StudentID:</label>
+            <input type="varchar" name="ID" class="display"></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <li>  <label for="Enrollment">EnrollmentNumber:</label>
+            <input type="varchar" name="Enrollment" class="display"></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <li><label for="SName">StudentName:</label>
+            <input type="text" name="name" class="display"></li></ul>
+
+            <ul class="list1" >  <li> <label for="AcademicYear">Admitted_AcademicYear:</label>
+            <select name="AcademicYear" id="Year">
+            <option value= "Select">Select</option>
+            <option value= "2022-2023">2022-2023</option>
+            <option value= "2021-2022">2021-2022</option>
+            <option value= "2020-2021">2020-2021</option>
+            <option value= "2019-2020">2019-2020</option>
+            </select></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <li>  <label for="Lateral">IsLateralEntry:</label>
+            <select name="Lateral" id="Lateral">
+            <option value= "Select">Select</option>   
+            <option value= "Yes">Yes</option>
+            <option value= "No">No</option>
+            </select><br></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+           <li> <label for="Gender">Gender:</label>
+            <select name="Gender" id="gender">
+            <option value= "Select">Select</option>
+            <option value= "Male" id="1">Male</option>
+            <option value= "Female" id="0">Female</option>
+            </select><br></li></ul>
+
+           <ul class="list1"> <li> <label for="Caste">Caste:</label>
+          
+            <select name="Caste" id="caste">
+            <option value= "Select">Select</option>
+            <option value= "General" id = "1">General</option>
+            <option value= "OBC" id ="2">OBC</option>
+            <option value= "SC" id = "3">SC</option>
+            <option value= "ST" id ="4">ST</option>
+            </select><br></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+
+          <li>  <label for="Year">Year:</label>
+            <select name="Year" id="Year">
+            <option value= "Select">Select</option>
+            <option value= "2019">2019</option>
+            <option value= "2020">2020</option>
+            <option value= "2021">2021</option>
+            <option value= "2022">2022</option>
+            <option value= "2023">2023</option>
+            <option value= "2024">2024</option>
+            <option value= "2025">2025</option>
+            <option value= "2026">2026</option>
+            <option value= "2027">2027</option>
+            <option value= "2028">2028</option>
+            </select><br></li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <li>  <label for="Year">Branch:</label>
+            <select name="Branch" id="Branch">
+              <option value="">Select</option>
+              <option value="BCA">BCA</option>  
+              <option value="DDMCA">DDMCA</option>  
+              <option value="MCA">MCA</option>  
+              <option value="AIML">AIML</option>  
+              <option value="CIVIL">Civil</option>  
+              <option value="CSE">CSE</option>  
+              <option value="CSIT">CSIT</option>  
+              <option value="EC">EC</option>  
+              <option value="IOT">IOT</option>
+              <option value="IT">IT</option>
+            </select><br></li>
+
+          </ul>
+           
+           <ul class="list1"> <li><div class="dropdown">
+            <label for="country">Country:</label>
+            <select id="country" onchange="populateStates()">
+              <option value="">Select a country</option>
+              <option value="india">India</option>
+              <option value="other">Other</option>
+             
+            </select>
+          </div></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+         <li> <div class="dropdown">
+            <label for="state">State:</label>
+            <select id="state" onchange="populateDistricts()">
+              <option value="">Select a state</option>
+            </select>
+          </div></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li>  <div class="dropdown">
+            <label for="district">District:</label>
+            <select id="district">
+              <option value="">Select a district</option>
+            </select>
+          </div></li></ul>
+        
+        
+            <ul class="list1"> <li> <label for="EconomicallyBackward">IsEconomicallyBackward:</label>
+            <select name="EconomicallyBackward" id="EconomicallyBackward">
+            <option value= "Select">Select</option>
+            <option value= "Yes">Yes</option>
+            <option value= "No">No</option>
+            </select></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <li> <label for="SociallyChallenged">IsSociallyChallenged:</label>
+            <select name="SociallyChallenged" id="SociallyChallenged">
+            
+            <option value= "Select">Select</option>
+            <option value= "Yes">Yes</option>
+            <option value= "No">No</option>
+        
+            </select></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li>
+            Receiving TutionFee: <br><br><input type="checkbox" id="checkbox1" name="checkbox1" value="option1">
+            <label for="checkbox1">State Govt.</label>
+            
+            <input type="checkbox" id="checkbox2" name="checkbox2" value="option2">
+            <label for="checkbox2">Central Govt.</label>
+            
+            <input type="checkbox" id="checkbox3" name="checkbox3" value="option3">
+            <label for="checkbox3">Institute Funds</label>
+            
+            <input type="checkbox" id="checkbox4" name="checkbox4" value="option4">
+            <label for="checkbox4">Private Bodies</label>
+        
+            </li>
+
+
+</ul>
+
+<ul class="list1"><li><div>
+
+        <label for="Placed">IsPlaced:</label>
+        <select name="Placed" id="Placed">
+        <option value= "Yes">Yes</option>
+        <option value= "No">No</option>
+        </select>    
+</div></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><label for="HigherStudies">IsSelectedHigherStudies:</label>
+        <select name="HigherStudies" id="HigherStudies">
+        <option value= "Yes">Yes</option>
+        <option value= "No">No</option>
+        </select><br></li></ul>
+               
+       <center> <input type="submit" value="Submit" class="Button">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="reset" class="Button"><br></center>
+
+
+    
+    </form>
+   <script>
+ var statesByCountry = {
+      india: ["Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jammu and Kashmir","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana,Tripura","Uttar Pradesh","Uttarakhand","West Bengal","Andaman and Nicobar","Chandigarh","Dadra and Nagar Haveli","Daman and Diu","Lakshadweep","Delhi","Puducherry"],
+      other: ["NA"],
+      
+    };
+
+    function populateStates() {
+      var countrySelect = document.getElementById("country");
+      var stateSelect = document.getElementById("state");
+      var selectedCountry = countrySelect.value;
+
+      // Clear the state dropdown
+      stateSelect.innerHTML = '<option value="">Select a state</option>';
+
+      // Populate the state dropdown with states of the selected country
+      if (selectedCountry in statesByCountry) {
+        var states = statesByCountry[selectedCountry];
+        for (var i = 0; i < states.length; i++) {
+          var option = document.createElement("option");
+          option.text = states[i];
+          stateSelect.add(option);
+        }
+      }
+    }
+
+    function populateDistricts() {
+      var stateSelect = document.getElementById("state");
+      var districtSelect = document.getElementById("district");
+      var selectedState = stateSelect.value;
+
+      // Clear the district dropdown
+      districtSelect.innerHTML = '<option value="">Select a district</option>';
+
+      // Populate the district dropdown based on the selected state
+      // You can fetch districts from a data source based on the selected state here
+
+      // Example districts for demonstration purposes
+      if (selectedState === "Andhra Pradesh") {
+        var districts = ["Visakhapatnam", "Alluri", "Tirupati","Anakapalli"];
+        for (var i = 0; i < districts.length; i++) {
+          var option = document.createElement("option");
+          option.text = districts[i];
+          districtSelect.add(option);
+        }
+      } else if (selectedState === "Arunachal Pradesh") {
+        var districts = ["Dibang Valley", "Tirap", "Lohit","Anjaw"];
+        for (var i = 0; i < districts.length; i++) {
+          var option = document.createElement("option");
+          option.text = districts[i];
+          districtSelect.add(option);
+        }
+      }
+      else if (selectedState === "Assam") {
+        var districts = ["Jorhat", "Dhubri", "Barpapeta","cachar"];
+        for (var i = 0; i < districts.length; i++) {
+          var option = document.createElement("option");
+          option.text = districts[i];
+          districtSelect.add(option);
+        }
+      }
+      else if (selectedState === "Bihar") {
+        var districts = ["Patna", "Bhojpur", "Champaran","Siwan"];
+        for (var i = 0; i < districts.length; i++) {
+          var option = document.createElement("option");
+          option.text = districts[i];
+          districtSelect.add(option);
+        }
+      }
+      else if (selectedState === "Chhattisgarh") {
+        var districts = ["Bijapur", "Raipur", "Rajgarh","Korba"];
+        for (var i = 0; i < districts.length; i++) {
+          var option = document.createElement("option");
+          option.text = districts[i];
+        
+          districtSelect.add(option);
+        }
+      }
+      else if (selectedState === "Goa") {
+        var districts = ["North Goa", "South Goa"];
+        for (var i = 0; i < districts.length; i++) {
+          var option = document.createElement("option");
+          option.text = districts[i];
+        
+          districtSelect.add(option);
+        }
+      }
+
+      else if (selectedState === "Gujarat") {
+        var districts = [ "Ahmedabad", "Amreli", "Banaskantha", "Bharuch", "Bhavnagar", "Dang", "Jamnagar", "Junagadh", "Kheda", "Kachchh"];
+        for (var i = 0; i < districts.length; i++) {
+          var option = document.createElement("option");
+          option.text = districts[i];
+        
+          districtSelect.add(option);
+        }
+      }
+
+      else if (selectedState === "Haryana") {
+        var districts = ["Gurugram", "Panipat", "Kurukshetra","Sonipat"];
+        for (var i = 0; i < districts.length; i++) {
+          var option = document.createElement("option");
+          option.text = districts[i];
+        
+          districtSelect.add(option);
+        }
+      }
+
+      else if (selectedState === "Madhya Pradesh") {
+        var districts = ["Agar Malwa", "Alirajpur", "Anuppur", "Ashoknagar", "Balaghat", "Barwani", "Betul", "Bhind", "Bhopal", "Burhanpur", "Chhatarpur", "Chhindwara", "Damoh", "Datia", "Dewas", "Dhar", "Dindori", "Guna", "Gwalior", "Harda", "Hoshangabad", "Indore", "Jabalpur", "Jhabua", "Katni", "Khandwa", "Khargone", "Mandla", "Mandsaur", "Morena", "Narsinghpur", "Neemuch", "Panna", "Raisen", "Rajgarh", "Ratlam", "Rewa", "Sagar", "Satna", "Sehore", "Seoni", "Shahdol", "Shajapur", "Sheopur", "Shivpuri", "Sidhi", "Singrauli", "Tikamgarh", "Ujjain", "Umaria", "Vidisha"];
+        for (var i = 0; i < districts.length; i++) {
+          var option = document.createElement("option");
+          option.text = districts[i];
+        
+          districtSelect.add(option);
+        }
+      }
+
+      else if (selectedState === "Maharashtra") {
+        var districts = ["Ahmednagar", "Akola", "Amravati", "Aurangabad", "Beed", "Bhandara", "Buldhana", "Chandrapur", "Dhule", "Gadchiroli", "Gondia", "Hingoli", "Jalgaon", "Jalna", "Kolhapur", "Latur", "Mumbai City", "Mumbai Suburban", "Nagpur", "Nanded", "Nandurbar", "Nashik", "Osmanabad", "Palghar", "Parbhani", "Pune", "Raigad", "Ratnagiri", "Sangli", "Satara", "Sindhudurg", "Solapur", "Thane", "Wardha", "Washim", "Yavatmal"];
+        for (var i = 0; i < districts.length; i++) {
+          var option = document.createElement("option");
+          option.text = districts[i];
+        
+          districtSelect.add(option);
+        }
+      }
+
+      else if (selectedState === "Punjab") {
+        var districts = ["Amritsar", "Barnala", "Bathinda", "Faridkot", "Fatehgarh Sahib", "Fazilka", "Ferozepur", "Gurdaspur", "Hoshiarpur", "Jalandhar", "Kapurthala", "Ludhiana", "Mansa", "Moga", "Muktsar", "Nawanshahr", "Pathankot", "Patiala", "Rupnagar", "Sangrur", "SAS Nagar", "Tarn Taran"];
+        for (var i = 0; i < districts.length; i++) {
+          var option = document.createElement("option");
+          option.text = districts[i];
+        
+          districtSelect.add(option);
+        }
+      }
+
+      else if (selectedState === "Delhi") {
+        var districts = ["Central Delhi", "East Delhi", "New Delhi", "North Delhi", "North East Delhi", "North West Delhi", "Shahdara", "South Delhi", "South East Delhi", "South West Delhi", "West Delhi"];
+        for (var i = 0; i < districts.length; i++) {
+          var option = document.createElement("option");
+          option.text = districts[i];
+        
+          districtSelect.add(option);
+        }
+      }
+      else{
+        var districts =["NA"];
+      }
+      // Add more conditions for other states if needed
+    }
+
+</script>
+  </body>
+</html>
+
+
+

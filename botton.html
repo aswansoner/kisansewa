@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        button{
+            position: relative;
+            padding: 1em 3em;
+            color: rgb(110, 237, 237);
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 0 0 0.5em rgb(110,237,237);
+            background-color: rgb(44, 157, 157);
+            border: 0.25em solid rgb(110, 237, 237);
+            border-radius: 1em;
+            box-shadow: 0 0 0.5em 0.25em rgb(110, 237, 237);
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s;
+
+        }
+        button::after{
+            content: "";
+            position: absolute;
+            top: 120%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgb(65,243,243,0.782);
+            filter: blur(2em);
+            pointer-events: none;
+
+        }
+        button:hover{
+            color: rgb(44, 157, 157);
+            background-color: rgb(110, 237, 237);
+            box-shadow: 0 0 0.5em 0.25em rgb(110, 237, 237);
+        }
+        button:active{
+            box-shadow: 0 0 0.3em 0.25em rgb(110, 237, 237);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="background-color: #f6f6c6;">
+        <legend>Button Animation</legend>
+    <center><h2 style="background-color: aqua;">BUTTON ANIMATION</h2>
+    <button>Button</button></center></fieldset>
+</body>
+</html>

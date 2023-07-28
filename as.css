@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 40%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+.navbar{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   position: sticky;
+   top: 0;
+   cursor: pointer;
+}
+.list{
+    width: 50%;
+    
+    align-items: center;
+    display: flex;
+
+}
+.list li{
+    list-style: none;
+    padding: 23px 30px;
+}
+.list li a{
+    text-decoration: none;
+    color: white;
+   
+}
+.list li a:hover{
+    text-decoration: none;
+    color: rgb(89, 90, 158);
+   
+
+}
+.rightnav{
+
+width: 50%;
+text-align: right;
+
+}
+#search{
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solidb gray;
+    border-radius: 8px;
+}
+.background{
+    background: rgba(0,0,0,0.7) url('https://c4.wallpaperflare.com/wallpaper/725/1022/497/pink-blue-blur-gradation-wallpaper-preview.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+.firstsection{
+    height: 100vh;
+}
+.fhalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.shalf{
+width: 30%;
+
+
+}
+.shalf img{
+    padding: 2px ;
+    width: 74%;
+display: block;
+    border: 4px solid white;
+    border-radius:150px;
+    margin: auto;
+}

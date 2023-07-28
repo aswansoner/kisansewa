@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="showFormButton">Click to Register</button>
+
+<form id="registrationForm" style="display: none;">
+  <!-- Form fields -->
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+  
+  <!-- Other form fields -->
+  
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+<script>
+    // Get the button and form elements
+var showFormButton = document.getElementById('showFormButton');
+var registrationForm = document.getElementById('registrationForm');
+
+// Add a click event listener to the button
+showFormButton.addEventListener('click', function() {
+  // Show the registration form by setting its display property to 'block'
+  registrationForm.style.display = 'block';
+});
+
+</script>

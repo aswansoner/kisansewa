@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        username:<input type=text name="name" class=form-control><br>
+        password:<input type=password name="pass"><br>
+        <input type=submit>
+        </form>
+        <?php
+        require("myconnection.php");
+        $con=getconnection();
+        $userid=$_REQUEST["name"];
+        $password=$_REQUEST["pass"];
+        $result=$con->query("select * from studentinfo where");
+        echo "<table border=1><tr><th>Name<th>Mobileno<th>Email<th>Password";
+        while($row=$result->fetch_assoc())
+        {
+        echo "<tr><td> $row[Name]<td>$row[Mobileno] <td> $row[Email]<td> $row[Password]" ;
+        }
+        echo "</table>";
+        $con->close();
+        ?>
+</body>
+</html>

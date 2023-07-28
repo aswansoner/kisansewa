@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>
+                Registration
+            </title>
+        </head>
+        <?php
+    
+    $name=$_REQUEST["name"]; 
+    $fname=$_REQUEST["fname"];
+    $mname=$_REQUEST["mname"];
+    
+    
+    $con=mysqli_connect("localhost","root","","niharika");
+    $r=$con->query("insert into data values('$name','$fname','$mname')");
+    if($r==1)
+        echo "Successfully Registerd . . . ";
+    else
+        echo "Not Registered . . . ";
+    
+    $con->close();
+    
+    ?> 
+    
+            <fieldset>
+    
+                <legend>
+                    User Info
+                </legend>
+    
+        <form  method="post">   
+                 
+                 <label for="ID">StudentID:</label><br>
+                <input type="varchar" name="ID"><br><br>
+    
+                <label for="Enrollment">EnrollmentNumber:</label><br>
+                <input type="varchar" name="Enrollment"><br><br>
+    
+                <label for="SName">StudentName:</label><br>
+                <input type="text" name="name"><br><br>
+    
+                <label for="AcademicYear">Admitted_AcademicYear:</label><br>
+                <select name="AcademicYear" id="Year">
+                <option value= "2022-2023">2022-2023</option>
+                <option value= "2021-2022">2021-2022</option>
+                <option value= "2020-2021">2020-2021</option>
+                <option value= "2019-2020">2019-2020</option>
+                </select><br><br>
+    
+                <label for="Lateral">IsLateralEntry:</label><br>
+                <select name="Lateral" id="Lateral">
+                <option value= "Yes">Yes</option>
+                <option value= "No">No</option>
+                </select><br><br>
+    
+                <label for="Gender">Gender:</label><br>
+                <select name="Gender" id="gender">
+                <option value= "Male" id="1">Male</option>
+                <option value= "Female" id="0">Female</option>
+                </select><br><br>
+    
+                <label for="Caste">Caste:</label><br>
+                <select name="Caste" id="caste">
+                <option value= "General" id = "1">General</option>
+                <option value= "OBC" id ="2">OBC</option>
+                <option value= "SC" id = "3">SC</option>
+                <option value= "ST" id ="4">ST</option>
+                </select><br><br>
+    
+                <label for="Year">Year:</label><br>
+                <select name="Year" id="Year">
+                <option value= "2019">2019</option>
+                <option value= "2020">2020</option>
+                <option value= "2021">2021</option>
+                <option value= "2022">2022</option>
+                <option value= "2023">2023</option>
+                <option value= "2024">2024</option>
+                <option value= "2025">2025</option>
+                <option value= "2026">2026</option>
+                <option value= "2027">2027</option>
+                <option value= "2028">2028</option>
+                </select><br><br>
+                  
+                <label for="EconomicallyBackward">IsEconomicallyBackward:</label><br>
+                <select name="EconomicallyBackward" id="EconomicallyBackward">
+                <option value= "Yes">Yes</option>
+                <option value= "No">No</option>
+                </select><br><br>
+    
+               <label for="SociallyChallenged">IsSociallyChallenged:</label><br>
+                <select name="SociallyChallenged" id="SociallyChallenged">
+                <option value= "Yes" >Yes</option>
+                <option value= "No">No</option>
+                </select><br><br>
+    
+                <label for="TutionFees">IsReceivingTutionFees:</label><br>
+    
+                <select name="IsReceivingTutionFees" id="IsReceivingTutionFees">
+                <option value= "Yes"  id="yes">Yes</option>
+                <option value= "No" id="no">No</option>
+                </select><br><br>
+                
+                   
+            <input type="submit" value="Submit" class="Button">
+            <input type="reset" value="reset" class="button"><br>
+    
+    
+        
+        </form></fieldset>
+    </html>
+    <script>
+        function IsReceivingTutionFees(){
+        
+      
+        }
+    </script>
+</body>
+</html>
